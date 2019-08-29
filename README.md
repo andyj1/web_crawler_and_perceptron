@@ -1,6 +1,8 @@
-##### Web Crawler
+#### Web Crawler
 
 - Air Quality Index
+  - Reads information in Korean format, and undergoes processing steps (KOR-ENG translation, contextual correction) 
+  - packages: googletrans, bs4, urllib
   - Command (with arguments)
     ```console 
     python AQI_crawler.py -c seoul -n kr
@@ -10,11 +12,11 @@
     ```
     ![NewYork](outputs/newyork.jpg)
     ![Seoul](outputs/seoul.jpg)
-  - Reads information in Korean format, and undergoes processing steps (KOR-ENG translation, contextual correction) 
 
 - Google Search
-  - Searches for a user-specified query with proper header and maps links to found result title in JSON (dictionary) format. 
-  - Command
+  - Searches for a user-specified query with proper HTTP header and maps links to found result title in JSON format. 
+  - packages: requests, bs4
+  - Command (with arguments)
     ```console
     python google_crawler.py --query test
     ```
@@ -23,6 +25,8 @@
 ***********
 
 - Perceptron neural network with backpropgation (1-stage)
+  - package: numpy
+  - console output
   ```script
   Random synaptic weights:
     [[-0.16595599]
