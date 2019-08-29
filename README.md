@@ -14,6 +14,10 @@
 
 - Google Search
   - Searches for a user-specified query with proper header and maps links to found result title in JSON (dictionary) format. 
+  - Command
+    ```console
+    python google_crawler.py --query test
+    ```
     ![Output](outputs/test.jpg)
 
 ***********
